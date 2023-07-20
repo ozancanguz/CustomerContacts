@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.ozancanguz.customercontacts.R
 import com.ozancanguz.customercontacts.data.db.Customer
 import com.ozancanguz.customercontacts.databinding.FragmentContactBinding
@@ -47,6 +48,8 @@ class ContactFragment : Fragment() {
 
             contactListViewModel.insertCustomer(customer)
             Log.d("check","Data Added " +customerName)
+
+            findNavController().navigate(R.id.action_contactFragment_to_contactListFragment)
 
         }
     }
