@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.customercontacts.R
 import com.ozancanguz.customercontacts.databinding.FragmentContactBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ContactFragment : Fragment() {
     private var _binding: FragmentContactBinding? = null
 
