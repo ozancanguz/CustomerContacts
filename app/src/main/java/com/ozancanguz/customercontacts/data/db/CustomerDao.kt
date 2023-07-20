@@ -1,9 +1,10 @@
 package com.ozancanguz.customercontacts.data.db
 
 import androidx.lifecycle.LiveData
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-
+@Dao
 interface CustomerDao {
 
 
